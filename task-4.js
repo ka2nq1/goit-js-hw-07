@@ -1,6 +1,6 @@
-const decrementBtn = document.querySelector('#counter').firstElementChild
-const incrementBtn = document.querySelector('#counter').lastElementChild
-let counterValue = Number(document.querySelector('#value').textContent)
+const decrementBtn = counter.firstElementChild
+const incrementBtn = counter.lastElementChild
+let counterValue = Number(value.textContent)
 
 const increment = () => {
     counterValue += 1
