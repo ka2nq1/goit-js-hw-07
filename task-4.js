@@ -1,6 +1,6 @@
 const decrementBtn = counter.firstElementChild
 const incrementBtn = counter.lastElementChild
-let counterValue = Number(value.textContent)
+let counterValue = 0
 
 const increment = () => {
     counterValue += 1

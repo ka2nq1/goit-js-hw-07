@@ -1,7 +1,8 @@
 const input = document.querySelector('#validation-input');
+const dataLength = Number(input.attributes['data-length'].value)
 const validControl = () => {
     input.className = 'invalid'
-    if (input.value.length === 6) {
+    if (input.value.length === dataLength) {
         input.className = 'valid'
     }
     if (input.value.length === 0) {

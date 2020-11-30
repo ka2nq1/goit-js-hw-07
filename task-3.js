@@ -16,12 +16,12 @@ const images = [
     },
 ]
 
+const listGallery = document.querySelector('#gallery')
 const imagesGallery = (arr) => {
-    const listGallery = document.querySelector('#gallery')
-    const galleryItem = arr.reduce(
-        (str, {url, alt}) => str += `<li><img width = 80% src = ${url} alt = ${alt}></li>`, ""
+    return arr.reduce(
+    (str, {url, alt}) => str += `<li><img width = 80% src = ${url} alt = ${alt}></li>`, ""
     )
-    return listGallery.insertAdjacentHTML("afterbegin", galleryItem)
 }
+  
+listGallery.insertAdjacentHTML("afterbegin", imagesGallery(images))
 
-imagesGallery(images)
